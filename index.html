@@ -1,46 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Kasi | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brian Kasi — Cybersecurity & Ethical Hacking</title>
+  <meta name="description" content="Brian Kasi — Cybersecurity, Ethical Hacking, Web & WiFi Penetration Testing. Portfolio and services." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="logo">BRK</div>
+    <nav id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="menu-btn"><i class="fas fa-bars"></i></div>
+  </header>
 
-<canvas id="matrix"></canvas>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="intro reveal">
+          <div class="eyebrow">BRIAN KASI — CYBERSECURITY</div>
+          <h1>I'm Brian Kasi — <span class="typed" id="typed">Ethical Hacker</span></h1>
+          <p class="lead">Specialising in web penetration testing, Wi‑Fi security assessments, OSINT, and red‑team tactics. I help organisations find and fix vulnerabilities before attackers do.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Hire Me</a>
+          </div>
+          <div class="contact-info">
+            <strong>Location:</strong> Nairobi, Kenya &nbsp;•&nbsp; <strong>Availability:</strong> Open to freelance & remote roles
+          </div>
+        </div>
 
-<div class="center-box">
-    <h1 class="glitch-text">BRIAN KASI</h1>
-    <h2 class="typing">Cybersecurity • Ethical Hacking • Web Pentesting</h2>
+        <aside class="card reveal">
+          <div class="avatar"></div>
+          <h3>Brian Kasi</h3>
+          <div class="meta">Ethical Hacker • Penetration Tester</div>
+          <div class="tools">
+            <span class="chip">Web App Pentesting</span>
+            <span class="chip">Wi‑Fi Security</span>
+            <span class="chip">OSINT</span>
+            <span class="chip">Linux / Bash</span>
+            <span class="chip">Network Security</span>
+          </div>
+          <div class="card-actions">
+            <a href="#contact" class="btn">Contact</a>
+            <a href="/" class="btn ghost" onclick="event.preventDefault();alert('Replace with link to CV or GitHub');">Download CV</a>
+          </div>
+          <div class="email">Email: <a href="mailto:kbryaan@gmail.com">kbryaan@gmail.com</a></div>
+        </aside>
+      </div>
+    </section>
 
-    <div class="button-row">
-        <a href="#skills" class="btn">Skills</a>
-        <a href="#projects" class="btn">Projects</a>
-        <a href="#contact" class="btn">Contact</a>
-    </div>
-</div>
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <h2 class="heading">About Me</h2>
+      <p>I'm <strong>Brian Kasi</strong>, a cybersecurity professional focused on ethical hacking and penetration testing. I run real‑world assessments for web applications, APIs and Wi‑Fi networks, emulating attacker techniques to expose weak points. My approach combines hands‑on testing, clear technical reporting, and practical remediation guidance so teams can close gaps quickly.</p>
+    </section>
 
-<section id="skills" class="section-box">
-    <h2>Skills</h2>
-    <ul>
-        <li>WiFi Pentesting (Aircrack, Wifite, Fluxion)</li>
-        <li>Web Pentesting (SQLi, XSS, BurpSuite)</li>
-        <li>OSINT & Recon</li>
-        <li>Linux & Kali Tools</li>
-    </ul>
-</section>
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2 class="heading">Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Web App Security</h4>
+          <div class="meter"><i style="width:90%"></i></div>
+          <p>OWASP Top 10, Burp Suite, SQLi, XSS, Auth flaws</p>
+        </div>
+        <div class="skill">
+          <h4>Wireless & Network</h4>
+          <div class="meter"><i style="width:86%"></i></div>
+          <p>Aircrack, Bettercap, Wireshark, Rogue AP assessments</p>
+        </div>
+        <div class="skill">
+          <h4>OSINT & Recon</h4>
+          <div class="meter"><i style="width:80%"></i></div>
+          <p>TheHarvester, Recon-ng, custom scripts</p>
+        </div>
+        <div class="skill">
+          <h4>Programming & Scripting</h4>
+          <div class="meter"><i style="width:78%"></i></div>
+          <p>Python, Bash, JS — exploit & automation scripts</p>
+        </div>
+      </div>
+    </section>
 
-<section id="projects" class="section-box">
-    <h2>Projects</h2>
-    <p>More coming soon…</p>
-</section>
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <h2 class="heading">Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h4>Web App Pentest — E‑commerce</h4>
+          <p>Full OWASP Top 10 assessment on an e‑commerce platform. Found critical auth bypass and stored XSS. Delivered PoC and remediation steps.</p>
+          <div class="tags"><span class="chip">Burp</span><span class="chip">XSS</span><span class="chip">Auth</span></div>
+        </article>
+        <article class="project">
+          <h4>Wi‑Fi Security Assessment — Hotel Chain</h4>
+          <p>Conducted on‑site assessments for guest Wi‑Fi and management VLAN segregation. Demonstrated rogue AP risks and weak encryption use.</p>
+          <div class="tags"><span class="chip">Aircrack</span><span class="chip">Rogue‑AP</span></div>
+        </article>
+        <article class="project">
+          <h4>OSINT Investigation — Brand Exposure</h4>
+          <p>Mapped exposed employee data, leaked credentials and public asset inventory. Provided prioritized mitigation plan.</p>
+          <div class="tags"><span class="chip">OSINT</span><span class="chip">Automation</span></div>
+        </article>
+      </div>
+    </section>
 
-<section id="contact" class="section-box">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kbryaan@gmail.com">kbryaan@gmail.com</a></p>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <h2 class="heading">Contact & Services</h2>
+      <div class="contact-card">
+        <div class="panel">
+          <h3>Services I Offer</h3>
+          <ul>
+            <li>Web Application Penetration Testing</li>
+            <li>Wireless Network & Rogue AP Assessments</li>
+            <li>Red‑Team Exercises & Social Engineering (by contract)</li>
+            <li>OSINT & Attack Surface Reduction</li>
+            <li>Incident Response & Forensics (engagement)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Get in touch</h3>
+          <p>Email me at <a href="mailto:kbryaan@gmail.com">kbryaan@gmail.com</a> or use the contact form below.</p>
+          <form onsubmit="event.preventDefault();alert('Replace this demo form with your preferred contact pipeline.')">
+            <input placeholder="Your name" required>
+            <input placeholder="Email" required>
+            <textarea placeholder="Message" rows="4"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<script src="js/script.js"></script>
+  <footer>
+    © 2025 Brian Kasi — Ethical Hacking & Cybersecurity • Built with care
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
